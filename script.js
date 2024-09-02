@@ -20,20 +20,11 @@ function getComputerChoice() {
     }
 }
 
-function getHumanChoice() {
-    choice = prompt();
-    choice = choice.toLowerCase();
-    return choice;
-}
-
 let humanScore = 0;
 let computerScore = 0;
 
 function playRound(player) {
-    //player = getHumanChoice();
     CPU = getComputerChoice();
-    //console.log(player);
-    //console.log("computer picks " + CPU);
     if (humanScore == 0 && computerScore == 0) {
         pPlayer.textContent = "Player Score: 0";
         pCPU.textContent = "CPU Score: 0";
